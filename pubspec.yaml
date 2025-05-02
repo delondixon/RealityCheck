@@ -1,0 +1,64 @@
+name: realitycheck
+description: Reality Check
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.18.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  get: ^4.6.5
+  flutter_svg: ^1.1.6
+  form_field_validator: ^1.1.0
+  modal_bottom_sheet: ^2.1.2
+  syncfusion_flutter_charts: ^20.4.43
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  icons_launcher: ^2.0.6
+
+
+icons_launcher:
+  image_path: 'assets/images/icon.jpg'
+  platforms:
+    android:
+      adaptive_background_color: '#ffffff'
+      adaptive_foreground_image: 'assets/images/icon.jpg'
+      enable: true
+    ios:
+      enable: true
+# flutter pub run icons_launcher:create
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/svgs/
+    - assets/fonts/
+  fonts:
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/Gilroy-Regular.ttf
+        - asset: assets/fonts/Gilroy-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Gilroy-RegularItalic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/Gilroy-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Gilroy-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Gilroy-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Gilroy-Black.ttf
+          weight: 800
+        # - asset: fonts/Schyler-Italic.ttf
+        #   style: italic
